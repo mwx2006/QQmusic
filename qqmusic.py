@@ -68,8 +68,6 @@ if (yxtj==0):
     ui.msgbox(msg=lj,title="链接",ok_button="确定")
 elif (yxtj==1):
     os.system("mkdir qqmusic")
-    lrc=getLyric(songid[jd],mids[jd])
-    print(lrc)
     try:
         urllib.request.urlretrieve(jg,'./qqmusic/'+xx[jd][pp+1:]+".m4a")
     except:
