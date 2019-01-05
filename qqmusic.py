@@ -67,7 +67,9 @@ if (yxtj==0):
     #print(lj)
     ui.msgbox(msg=lj,title="链接",ok_button="确定")
 elif (yxtj==1):
-    os.system("mkdir qqmusic")
+    wjj=os.path.exists('./qqmusic')
+    if wjj== False:
+        os.makedirs("./qqmusic")
     try:
         urllib.request.urlretrieve(jg,'./qqmusic/'+xx[jd][pp+1:]+".m4a")
     except:
