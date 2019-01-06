@@ -84,7 +84,7 @@ elif(yxtj==2):
         if wjj== False:
             os.makedirs("./qqmusic")
         urllib.request.urlretrieve(jg,'./qqmusic/'+xx[jd][pp+1:]+".m4a")
-    except
+    except:
         ui.msgbox(msg="下载失败!",title="下载失败",ok_button="确定")
     else:
         os.system('vlc "./qqmusic/'+xx[jd][pp+1:]+".m4a\"")
