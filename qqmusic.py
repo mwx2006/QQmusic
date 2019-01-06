@@ -80,6 +80,9 @@ elif (yxtj==1):
 elif(yxtj==2):
     jg=jg[:-1]
     try:
+        wjj=os.path.exists('./qqmusic')
+        if wjj== False:
+            os.makedirs("./qqmusic")
         urllib.request.urlretrieve(jg,'./qqmusic/'+xx[jd][pp+1:]+".m4a")
     except:
         ui.msgbox(msg="下载失败!",title="下载失败",ok_button="确定")
